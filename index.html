@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aksay Pernando Tarigan</title>
+  <style>
+    /* Reset dasar */
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(to right, #f8f9fa, #e9ecef);
+      color: z#ffffff;
+      overflow-x: hidden;
+    }
+
+     /* Background Video */
+    #bg-video {
+      position: fixed;
+      right: 50;
+      bottom: 50;
+      min-width: 1000%;
+      min-height: 200%;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(100%); /* biar teks tetap terbaca */
+    }
+
+   header {
+  background: url("d:\nevermInd\1048232144.jpg.webp") no-repeat center center/cover;
+  color: #fca606;
+  padding: 1.2rem 2rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(236, 154, 1, 0.2);
+}
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #f1c40f;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .hero img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fa9805;
+      margin-bottom: 1rem;
+      transition: transform 0.4s ease;
+    }
+    .hero img:hover {
+      transform: scale(1.1) rotate(3deg);
+    }
+    .hero h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      color: #feffff;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
+    }
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #fdfdfd;
+      border-bottom: 2px solid #fab003;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(250, 165, 7, 0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background: #f39407;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+    }
+    .contact a:hover {
+      background: #f1c40f;
+      color: #f09707;
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #2c3e50;
+      color: #fff;
+      margin-top: 2rem;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+     <!-- Video Background -->
+  <video autoplay muted loop id="bg-video">
+    <source src="los angeles.mp4" type="video/mp4">
+  </video>
+
+  <header>
+    <h1>Aksay Pernando Tarigan</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#career goals">Career Goals</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  
+  <div class="hero"
+    style="background: url('d:\nevermInd\1048232144.jpg.webp') 
+          ">
+    <img src="foto profil.jpeg" alt="Foto Profil">
+    <background src="d:\nevermInd\1048232144.jpg.webp">
+    <h2>Hello, I'm Aksay Pernando Tarigan</h2>
+    <h3>Selamat datang kedalam sebagian dari hidup saya, ini adalah penggalan kecil tentang hidup saya.</h3>
+  </div>
+S
+<section id="motto hidup">
+    <h2>Motto Hidup</h2>
+    <h3>Fall Down 99 Times, Get Up 100</h3>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <h3>Saya adalah mahasiswa aktif yang sedang menempuh semester 7 di Program Studi Informatika UBSI. Walaupun belum memiliki pengalaman kerja, saya memiliki semangat belajar yang tinggi, disiplin, dan siap berkontribusi dengan baik jika diberi kesempatan bekerja. Saya tertarik untuk belajar dan berkembang di dunia kerja yang sesungguhnya.</h3>
+  </section>
+
+  <section id="career goals">
+    <h2>Tujuan Karir</h2>
+    <h3>Ingin mendapatkan pengalaman kerja pertama saya untuk belajar langsung di dunia kerja, serta mengembangkan keterampilan yang bisa menjadi bekal karier ke depan.</h3>
+  </section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Bahasa Pemrograman: Python (Basic), HTML, CSS (Basic)</li>
+    <li>Mampu mengoperasikan komputer dan aplikasi dasar (Microsoft Word, Excel)</li>
+    <li>Mampu menggunakan internet untuk riset dan komunikasi</li>
+    <li>Memiliki kemampuan komunikasi dasar yang baik</li>
+    <li>Cepat belajar dan mudah beradaptasi</li>
+    <li>Dapat bekerja secara individu maupun dalam tim</li>
+    <li>Disiplin dan bertanggung jawab</li>
+  </ul>
+</section>
+
+<section id="education">
+  <h2>Pendidikan</h2>
+  <div class="edu-item">
+    <h3>Universitas Bina Sarana Informatika</h3>
+    <p>Program Studi: Informatika</p>
+    <p>Semester: 7</p>
+    <p>Tahun Masuk: 2022</p>
+  </div>
+  <div class="edu-item">
+    <h3>SMA Negeri 2 Kabanjahe</h3>
+    <p>Tahun Masuk: 2019</p>
+    <p>Tahun Lulus: 2022</p>
+  </div>
+</section>
+
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <a href="mailto:aksaypernandotarigan34@gmail.com">Email</a>
+    <a href="https://www.instagram.com/nndootrgn_/" target="_blank">Instagram</a>
+    <a href="https://www.linkedin.com/in/aksay-pernando-tarigan-230704276/" target="_blank">LinkedIn</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aksay Pernando Tarigan. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Animasi muncul saat scroll
+    const sections = document.querySelectorAll("section");
+    const revealOnScroll = () => {
+      sections.forEach(sec => {
+        const rect = sec.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          sec.classList.add("show");
+        }
+      });
+    };
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+  </script>
+</body>
+</html>
